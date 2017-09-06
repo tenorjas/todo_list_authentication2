@@ -10,7 +10,7 @@ namespace testAuth.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<TodoModel> ToDos { get; set; }
+        public DbSet<TodoModel> TodoModel { get; set; }
       
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
